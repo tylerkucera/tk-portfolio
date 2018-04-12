@@ -51,10 +51,39 @@ body {
 		font-size: 70px;
 		line-height: 70px;
 		mix-blend-mode: difference;
-		color: #ECEBE4;
+		color: #FFFFFF;
 
 		.name-header {
 			color: #FFFFFF;
+		}
+
+		&.white {
+			mix-blend-mode: unset;
+		}
+	}
+
+	#side-menu {	
+		color: #FFFFFF;
+    width: fit-content;
+    position: fixed;
+		top: 110px;
+		font-size: 20px;
+		padding-left: 30px;
+		left: -210px;
+		
+		ul {
+			list-style: none;
+			padding: 0;
+
+			li {
+				padding: 5px 0;
+
+				a {
+					text-decoration: none;
+					color: inherit;
+					cursor: pointer;
+				}
+			}
 		}
 	}
 
@@ -64,10 +93,22 @@ body {
 		background: #ffffff;
 	}
 
-	.main-content {
+	.scroller-section {
 		width: 100%;
 		height: 2000px;
-		background: #393D3F;
+	}
+
+	#padding {
+		background: #000000;
+		height: 50px;
+	}
+
+	#about {	
+		background: #000000;
+	}
+
+	#resume {
+		background: #455A64;
 	}
 
 }
