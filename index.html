@@ -10,6 +10,7 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="scripts/jquery-3.3.1.min.js"></script>
 		<script src="scripts/main.js"></script>
@@ -26,22 +27,68 @@
 		<div id="side-menu">
 			<ul>
 				<li>
-					<a class="smooth-scroll" data-link="about">About</a>
+					<a class="smooth-scroll" data-link="intro-text">About</a>
 				</li>
 				<li>
-					<a class="smooth-scroll" data-link="resume">Resume</a>
+					<a class="smooth-scroll" data-link="experience-text">Experience</a>
 				</li>
-				<li>Something Else</li>
-				<li>Projects</li>
-				<li>Contact</li>
+				<li>
+					<a class="smooth-scroll" data-link="contact-text">Contact</a>
+				</li>
 			</ul>
 		</div>
 
 		<div id="scroll-over"></div>
 
-		<div class="scroller-section" id="padding"></div>
-		<div class="scroller-section" id="about"></div>
-		<div class="scroller-section" id="resume"></div>
+		<div class="scroller-section" id="about">
+			<div class="scroll-button-container">
+				<i class="fas fa-chevron-circle-down" data-link="intro-text"></i>
+			</div>
+			<div class="text">
+				<p id="intro-text">
+					Hi, my name is Tyler Kucera and I’m a software developer based out of Columbus, Ohio. Lately my focus has been in full stack web development, with an interest in both the visual design and technical implementation of websites.
+				</p>
+			</div>
+		</div>
+
+		<div class="scroller-section" id="experience">
+			<div class="scroll-button-container">
+				<i class="fas fa-chevron-circle-down" data-link="experience-text"></i>
+			</div>
+			<div class="text">
+				<p id="experience-text">
+					I have over a year of professional experience with full stack web development, including work with JavaScript, Vue/Vuex, .Net Core 2.0, C#, ColdFusion, HTML, CSS/SCSS and SQL. I also have about 8 months of professional experience developing MFC applications in C++. 
+				</p>
+				<p>
+					I also developed a mock marketing website for a friend’s company using HTML, CSS, JavaScript, and a little PHP. You can check out a copy of the site here and the source code here.
+				</p>
+				<p>
+					Aside from that, I enjoy learning new technologies and I’m currently taking an online course focusing on the MEAN stack (Mongo DB, Express.js, Angular 2, Node.js). I would like to begin building a recipe tracking web app on the MEAN stack once I complete the course.
+				</p>
+			</div>
+		</div>
+
+		<div class="scroller-section" id="contact">
+			<div class="scroll-button-container">
+				<i class="fas fa-chevron-circle-down" data-link="contact-text"></i>
+			</div>
+			<div class="text">
+				<p id="contact-text">
+					Contact info goes here
+				</p>
+			</div>
+		</div>
+
+		<div class="scroller-section" id="footer">
+			<div class="scroll-button-container">
+				<i class="fas fa-chevron-circle-down" data-link="footer-text"></i>
+			</div>
+			<div class="text">
+				<p id="footer-text">
+					This is about to be the footer
+				</p>
+			</div>
+		</div>
 
 	</body>
 </html>

@@ -48,22 +48,13 @@ body {
 	#expandable {
 		padding: 30px;
 		position: fixed;
-		font-size: 70px;
-		line-height: 70px;
-		mix-blend-mode: difference;
-		color: #FFFFFF;
-
-		.name-header {
-			color: #FFFFFF;
-		}
-
-		&.white {
-			mix-blend-mode: unset;
-		}
+		font-size: 90px;
+		line-height: 90px;
+		color: #ECEBE4;
 	}
 
 	#side-menu {	
-		color: #FFFFFF;
+		color: #ECEBE4;
     width: fit-content;
     position: fixed;
 		top: 110px;
@@ -90,25 +81,60 @@ body {
 	#scroll-over {
 		width: 100%;
 		height: 400px;
-		background: #ffffff;
+		background: #393D3F;
 	}
 
 	.scroller-section {
 		width: 100%;
-		height: 2000px;
+		display: inline-block;
+
+		.scroll-button-container {
+			color: #ECEBE4;
+			text-align: center;
+			
+			i {
+				font-size: 40px;
+				position: relative;
+				top: -12px;
+				cursor: pointer;
+			}
+		}
+
+		div.text {
+			padding-top: 600px;
+		}
+
+		&#about {
+			background: #426A5A;
+		}
+	
+		&#experience {
+			background: #326273;
+		}
+
+		&#contact {
+			background: #393D3F;
+		}
+
+		&#footer {
+			background: #5C9EAD;
+		}
+
+		p {
+			margin: 0 auto;
+			color: #ECEBE4;
+			max-width: 800px;
+			width: 60%;
+			font-size: 30px;
+			font-weight: 300;
+			padding-bottom: 50px;
+
+			&:focus {
+				outline: none;
+			}
+		}
 	}
 
-	#padding {
-		background: #000000;
-		height: 50px;
-	}
-
-	#about {	
-		background: #000000;
-	}
-
-	#resume {
-		background: #455A64;
-	}
+	
 
 }
