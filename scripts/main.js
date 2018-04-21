@@ -62,7 +62,6 @@ function toggleItemActive(targetId) {
 	$('.left-nav').each(function(i, navItem) {
 		var linkType = navItem.dataset.link.substring(0, navItem.dataset.link.indexOf('-'));
 		if(linkType == targetId){
-			console.log(targetId);
 			$(navItem).addClass('active');
 		} else {
 			$(navItem).removeClass('active');
