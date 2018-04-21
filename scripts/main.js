@@ -85,6 +85,7 @@ function opaqueNameHeader() {
 	}
 }
 
+
 $(function() {
 	nameSize();
 	menuPosition();
