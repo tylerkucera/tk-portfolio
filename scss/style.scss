@@ -137,19 +137,35 @@ body {
 		}
 	}
 
+	i {
+		color: $gainsboro;
+		cursor: pointer;
+		-webkit-transition: color $fade-time ease-out;
+		-moz-transition: color $fade-time ease-out;
+		-o-transition: color $fade-time ease-out;
+		transition: color $fade-time ease-out;
+
+		&:hover {
+			color: $spanish-gray;
+			-webkit-transition: color $fade-time ease-out;
+			-moz-transition: color $fade-time ease-out;
+			-o-transition: color $fade-time ease-out;
+			transition: color $fade-time ease-out;
+		}
+	}
+
 	.scroller-section {
 		width: 100%;
 		display: inline-block;
 
 		.scroll-button-container {
-			color: #ECEBE4;
 			text-align: center;
 			
 			i {
+				text-shadow: 0 0 15px #404040;
 				font-size: 40px;
 				position: relative;
 				top: -12px;
-				cursor: pointer;
 			}
 		}
 
@@ -167,11 +183,23 @@ body {
 
 		&#contact {
 			background: $deep-space;
+
+			div.contact-links {
+				text-align: center;
+				color: $gainsboro;
+				font-size: 60px;
+				margin-bottom: 50px;
+			}
 		}
 
 		&#footer {
 			background: $jet;
-			height: 3000px;
+			height: 800px;
+
+			.copyright {
+				text-align: center;
+				font-size: 18px;
+			}
 		}
 
 		p {

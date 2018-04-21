@@ -88,5 +88,6 @@ $(function() {
 	$('.scroll-button-container i').click(function(event){
 		smoothScroll(event);
 	});
-	
+
+	$('#year').text((new Date()).getFullYear());
 });
