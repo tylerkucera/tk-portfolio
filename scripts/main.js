@@ -66,18 +66,36 @@ function toggleItemActive(targetId) {
 		} else {
 			$(navItem).removeClass('active');
 		}
-	})
+	});
+}
+
+function opaqueNameHeader() {
+	var self = $(this);
+	if($(window).width() <= 767){
+		$('#side-menu a').each(function(i, link) {
+			if ($(link).hasClass('active')) {
+				if (self.scrollTop() >= $('#intro').offset().top){
+					var elementId = link.dataset.link.substring(0, link.dataset.link.indexOf('-'));
+					$('.name-header').css('background', $('#' + elementId).css('background-color'));
+				} else {
+					$('.name-header').css('background', 'transparent');
+				}
+			}
+		});
+	}
 }
 
 $(function() {
 	nameSize();
 	menuPosition();
 	activateMenuItems();
+	opaqueNameHeader();
 
 	$(window).scroll(function() {
 		nameSize();
 		menuPosition();
 		activateMenuItems();
+		opaqueNameHeader();
 	});
 
 	$('.smooth-scroll').click(function() {

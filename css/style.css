@@ -60,7 +60,7 @@ body #expandable a.name-header {
 }
 body #expandable a.name-header:hover {
   cursor: pointer;
-  background-color: #416165;
+  background-color: #416165 !important;
   -webkit-transition: background-color 0.2s ease-out;
   -moz-transition: background-color 0.2s ease-out;
   -o-transition: background-color 0.2s ease-out;
@@ -170,4 +170,17 @@ body .scroller-section p {
 }
 body .scroller-section p:focus {
   outline: none;
+}
+@media screen and (max-width: 767px) {
+  body .scroller-section p:not(.copyright) {
+    margin: 0 0 0 175px;
+    font-size: 25px;
+  }
+  body .name-header {
+    background: inherit;
+  }
+  body #side-menu ul {
+    padding: 10px;
+    border: 3px solid #DADAD9;
+  }
 }
