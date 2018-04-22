@@ -66,6 +66,7 @@ body {
 		color: $gainsboro;
 
 		a.name-header {
+			cursor: pointer;
 			border: 8px solid;
 			padding: 16px 12px 6px 14px;
 			display: block;
@@ -77,15 +78,6 @@ body {
 			-moz-transition: background-color $fade-time ease-out;
 			-o-transition: background-color $fade-time ease-out;
 			transition: background-color $fade-time ease-out;
-			
-			&:hover {
-				cursor: pointer;
-				background-color: $deep-space !important;
-				-webkit-transition: background-color $fade-time ease-out;
-				-moz-transition: background-color $fade-time ease-out;
-				-o-transition: background-color $fade-time ease-out;
-				transition: background-color $fade-time ease-out;
-			}
 		}
 	}
 
@@ -145,13 +137,7 @@ body {
 		-o-transition: color $fade-time ease-out;
 		transition: color $fade-time ease-out;
 
-		&:hover {
-			color: $spanish-gray;
-			-webkit-transition: color $fade-time ease-out;
-			-moz-transition: color $fade-time ease-out;
-			-o-transition: color $fade-time ease-out;
-			transition: color $fade-time ease-out;
-		}
+		
 	}
 
 	.scroller-section {
@@ -220,8 +206,10 @@ body {
 	@media screen and (max-width: 767px) {
 
 		.scroller-section p:not(.copyright) {
-			margin: 0 0 0 175px;
-			font-size: 25px;
+			margin: 0;
+			font-size: 22px;
+			padding-left: 158px;
+			width: 55%;
 		}
 
 		.name-header {
@@ -231,6 +219,32 @@ body {
 		#side-menu ul {
 			padding: 10px;
 			border: 3px solid $gainsboro;
+
+			li {
+				font-size: 16px;
+			}
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		#expandable a.name-header {
+			&:hover {
+				background-color: $deep-space !important;
+				-webkit-transition: background-color $fade-time ease-out;
+				-moz-transition: background-color $fade-time ease-out;
+				-o-transition: background-color $fade-time ease-out;
+				transition: background-color $fade-time ease-out;
+			}
+		}
+
+		body i {
+			&:hover {
+				color: $spanish-gray;
+				-webkit-transition: color $fade-time ease-out;
+				-moz-transition: color $fade-time ease-out;
+				-o-transition: color $fade-time ease-out;
+				transition: color $fade-time ease-out;
+			}
 		}
 	}
 

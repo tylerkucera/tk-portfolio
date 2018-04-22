@@ -46,6 +46,7 @@ body #expandable {
   color: #DADAD9;
 }
 body #expandable a.name-header {
+  cursor: pointer;
   border: 8px solid;
   padding: 16px 12px 6px 14px;
   display: block;
@@ -53,14 +54,6 @@ body #expandable a.name-header {
   -webkit-margin-after: 1em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
-  -webkit-transition: background-color 0.2s ease-out;
-  -moz-transition: background-color 0.2s ease-out;
-  -o-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
-}
-body #expandable a.name-header:hover {
-  cursor: pointer;
-  background-color: #416165 !important;
   -webkit-transition: background-color 0.2s ease-out;
   -moz-transition: background-color 0.2s ease-out;
   -o-transition: background-color 0.2s ease-out;
@@ -109,13 +102,6 @@ body #scroll-over:focus {
 body i {
   color: #DADAD9;
   cursor: pointer;
-  -webkit-transition: color 0.2s ease-out;
-  -moz-transition: color 0.2s ease-out;
-  -o-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
-}
-body i:hover {
-  color: #909590;
   -webkit-transition: color 0.2s ease-out;
   -moz-transition: color 0.2s ease-out;
   -o-transition: color 0.2s ease-out;
@@ -173,8 +159,10 @@ body .scroller-section p:focus {
 }
 @media screen and (max-width: 767px) {
   body .scroller-section p:not(.copyright) {
-    margin: 0 0 0 175px;
-    font-size: 25px;
+    margin: 0;
+    font-size: 22px;
+    padding-left: 158px;
+    width: 55%;
   }
   body .name-header {
     background: inherit;
@@ -182,5 +170,24 @@ body .scroller-section p:focus {
   body #side-menu ul {
     padding: 10px;
     border: 3px solid #DADAD9;
+  }
+  body #side-menu ul li {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body #expandable a.name-header:hover {
+    background-color: #416165 !important;
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+  }
+  body body i:hover {
+    color: #909590;
+    -webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
   }
 }
