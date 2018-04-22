@@ -44,6 +44,7 @@ body #expandable {
   font-size: 90px;
   line-height: 90px;
   color: #DADAD9;
+  z-index: 4;
 }
 body #expandable a.name-header {
   cursor: pointer;
@@ -67,10 +68,12 @@ body #side-menu {
   font-size: 20px;
   padding-left: 30px;
   left: -210px;
+  z-index: 5;
 }
 body #side-menu ul {
   list-style: none;
-  padding: 0;
+  padding: 10px;
+  border: 3px solid #DADAD9;
 }
 body #side-menu ul li {
   padding: 5px 0;
@@ -157,6 +160,20 @@ body .scroller-section p {
 body .scroller-section p:focus {
   outline: none;
 }
+body .scroller-section p a {
+  color: #DADAD9;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+body .scroller-section p a:hover {
+  color: #333232;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
 @media screen and (max-width: 767px) {
   body .scroller-section p:not(.copyright) {
     margin: 0;
@@ -167,15 +184,14 @@ body .scroller-section p:focus {
   body .name-header {
     background: inherit;
   }
-  body #side-menu ul {
-    padding: 10px;
-    border: 3px solid #DADAD9;
-  }
   body #side-menu ul li {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 768px) {
+  body #expandable a.name-header {
+    background: transparent !important;
+  }
   body #expandable a.name-header:hover {
     background-color: #416165 !important;
     -webkit-transition: background-color 0.2s ease-out;
