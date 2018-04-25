@@ -1,210 +1,189 @@
 @font-face {
-  font-family: "Josefin Sans";
+  font-family: 'Josefin Sans';
   src: url("../fonts/JosefinSans-Light.ttf") format("truetype");
   font-weight: 300;
-  font-style: normal;
-}
+  font-style: normal; }
 @font-face {
-  font-family: "Josefin Sans";
+  font-family: 'Josefin Sans';
   src: url("../fonts/JosefinSans-LightItalic.ttf") format("truetype");
   font-weight: 300;
-  font-style: italic;
-}
+  font-style: italic; }
 @font-face {
-  font-family: "Josefin Sans";
+  font-family: 'Josefin Sans';
   src: url("../fonts/JosefinSans-Regular.ttf") format("truetype");
   font-weight: 400;
-  font-style: normal;
-}
+  font-style: normal; }
 @font-face {
-  font-family: "Josefin Sans";
+  font-family: 'Josefin Sans';
   src: url("../fonts/JosefinSans-Italic.ttf") format("truetype");
   font-weight: 400;
-  font-style: italic;
-}
+  font-style: italic; }
 @font-face {
-  font-family: "Josefin Sans";
+  font-family: 'Josefin Sans';
   src: url("../fonts/JosefinSans-Bold.ttf") format("truetype");
   font-weight: 700;
-  font-style: normal;
-}
+  font-style: normal; }
 @font-face {
-  font-family: "Josefin Sans";
+  font-family: 'Josefin Sans';
   src: url("../fonts/JosefinSans-BoldItalic.ttf") format("truetype");
   font-weight: 700;
-  font-style: italic;
-}
+  font-style: italic; }
 body {
-  font-family: "Josefin Sans", "Arial Narrow", Arial, sans-serif;
-  height: 2000px;
-}
-body #expandable {
-  padding: 30px;
-  position: fixed;
-  font-size: 90px;
-  line-height: 90px;
-  color: #DADAD9;
-  z-index: 4;
-}
-body #expandable a.name-header {
-  cursor: pointer;
-  border: 8px solid;
-  padding: 16px 12px 6px 14px;
-  display: block;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 0;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-transition: background-color 0.2s ease-out;
-  -moz-transition: background-color 0.2s ease-out;
-  -o-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
-}
-body #side-menu {
-  color: #DADAD9;
-  width: fit-content;
-  position: fixed;
-  top: 110px;
-  font-size: 20px;
-  padding-left: 30px;
-  left: -210px;
-  z-index: 5;
-}
-body #side-menu ul {
-  list-style: none;
-  padding: 10px;
-  border: 3px solid #DADAD9;
-}
-body #side-menu ul li {
-  padding: 5px 0;
-}
-body #side-menu ul li a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-body #side-menu ul li a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 3px;
-  background: #DADAD9;
-  transition: width 0.2s;
-}
-body #side-menu ul li a.active::after, body #side-menu ul li a:hover::after {
-  width: 100%;
-}
-body #scroll-over {
-  width: 100%;
-  height: 400px;
-  background: #909590;
-}
-body #scroll-over:focus {
-  outline: none;
-}
-body i {
-  color: #DADAD9;
-  cursor: pointer;
-  -webkit-transition: color 0.2s ease-out;
-  -moz-transition: color 0.2s ease-out;
-  -o-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
-}
-body .scroller-section {
-  width: 100%;
-  display: inline-block;
-}
-body .scroller-section .scroll-button-container {
-  text-align: center;
-}
-body .scroller-section .scroll-button-container i {
-  text-shadow: 0 0 15px #404040;
-  font-size: 40px;
-  position: relative;
-  top: -12px;
-}
-body .scroller-section div.text {
-  padding-top: 600px;
-}
-body .scroller-section#intro {
-  background: #357266;
-}
-body .scroller-section#experience {
-  background: #909590;
-}
-body .scroller-section#contact {
-  background: #416165;
-}
-body .scroller-section#contact div.contact-links {
-  text-align: center;
-  color: #DADAD9;
-  font-size: 60px;
-  margin-bottom: 50px;
-}
-body .scroller-section#footer {
-  background: #333232;
-  height: 800px;
-}
-body .scroller-section#footer .copyright {
-  text-align: center;
-  font-size: 18px;
-}
-body .scroller-section p {
-  margin: 0 auto;
-  color: #DADAD9;
-  max-width: 800px;
-  width: 60%;
-  font-size: 30px;
-  padding-bottom: 50px;
-  opacity: 0;
-}
-body .scroller-section p:focus {
-  outline: none;
-}
-body .scroller-section p a {
-  color: #DADAD9;
-  -webkit-transition: color 0.2s ease-out;
-  -moz-transition: color 0.2s ease-out;
-  -o-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
-}
-body .scroller-section p a:hover {
-  color: #333232;
-  -webkit-transition: color 0.2s ease-out;
-  -moz-transition: color 0.2s ease-out;
-  -o-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
-}
-@media screen and (max-width: 767px) {
-  body .scroller-section p:not(.copyright) {
-    margin: 0;
-    font-size: 22px;
-    padding-left: 158px;
-    width: 55%;
-  }
-  body .name-header {
-    background: inherit;
-  }
-  body #side-menu ul li {
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 768px) {
-  body #expandable a.name-header {
-    background: transparent !important;
-  }
-  body #expandable a.name-header:hover {
-    background-color: #416165 !important;
-    -webkit-transition: background-color 0.2s ease-out;
-    -moz-transition: background-color 0.2s ease-out;
-    -o-transition: background-color 0.2s ease-out;
-    transition: background-color 0.2s ease-out;
-  }
-  body body i:hover {
-    color: #909590;
+  font-family: 'Josefin Sans', 'Arial Narrow', Arial, sans-serif;
+  height: 2000px; }
+  body #expandable {
+    padding: 30px;
+    position: fixed;
+    font-size: 90px;
+    line-height: 90px;
+    color: #DADAD9;
+    z-index: 4; }
+    body #expandable a.name-header {
+      cursor: pointer;
+      border: 8px solid;
+      padding: 16px 12px 6px 14px;
+      display: block;
+      -webkit-margin-before: 1em;
+      -webkit-margin-after: 0;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      -webkit-transition: background-color 0.2s ease-out;
+      -moz-transition: background-color 0.2s ease-out;
+      -o-transition: background-color 0.2s ease-out;
+      transition: background-color 0.2s ease-out; }
+  body #side-menu {
+    color: #DADAD9;
+    width: fit-content;
+    position: fixed;
+    top: 110px;
+    font-size: 20px;
+    padding-left: 30px;
+    left: -210px;
+    z-index: 5; }
+    body #side-menu ul {
+      list-style: none;
+      padding: 10px;
+      border: 3px solid #DADAD9; }
+      body #side-menu ul li {
+        padding: 5px 0; }
+        body #side-menu ul li a {
+          text-decoration: none;
+          color: inherit;
+          cursor: pointer; }
+          body #side-menu ul li a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background: #DADAD9;
+            transition: width 0.2s; }
+          body #side-menu ul li a.active::after, body #side-menu ul li a:hover::after {
+            width: 100%; }
+  body #scroll-over {
+    width: 100%;
+    height: 400px;
+    background: #909590; }
+    body #scroll-over:focus {
+      outline: none; }
+  body i {
+    color: #DADAD9;
+    cursor: pointer;
     -webkit-transition: color 0.2s ease-out;
     -moz-transition: color 0.2s ease-out;
     -o-transition: color 0.2s ease-out;
-    transition: color 0.2s ease-out;
-  }
-}
+    transition: color 0.2s ease-out; }
+  body .scroller-section {
+    width: 100%;
+    display: inline-block; }
+    body .scroller-section .scroll-button-container {
+      text-align: center; }
+      body .scroller-section .scroll-button-container i {
+        text-shadow: 0 0 15px #404040;
+        font-size: 40px;
+        position: relative;
+        top: -12px; }
+    body .scroller-section div.text {
+      padding-top: 600px; }
+    body .scroller-section#intro {
+      background: #357266; }
+    body .scroller-section#experience {
+      background: #909590; }
+    body .scroller-section#technologies {
+      background: #357266; }
+      body .scroller-section#technologies .technologies-grid {
+        color: #DADAD9;
+        text-align: center; }
+        body .scroller-section#technologies .technologies-grid .grid-row {
+          padding: 10px 0; }
+          body .scroller-section#technologies .technologies-grid .grid-row .grid-item {
+            display: inline-flex;
+            border: 3px solid #DADAD9;
+            width: 150px;
+            height: 50px; }
+            body .scroller-section#technologies .technologies-grid .grid-row .grid-item p {
+              text-align: center;
+              font-size: 20px;
+              line-height: 53px;
+              width: 100%; }
+    body .scroller-section#contact {
+      background: #416165; }
+      body .scroller-section#contact div.contact-links {
+        text-align: center;
+        color: #DADAD9;
+        font-size: 60px;
+        margin-bottom: 50px; }
+    body .scroller-section#footer {
+      background: #333232;
+      height: 800px; }
+      body .scroller-section#footer .copyright {
+        text-align: center;
+        font-size: 18px; }
+    body .scroller-section p {
+      margin: 0 auto;
+      color: #DADAD9;
+      max-width: 800px;
+      width: 60%;
+      font-size: 30px;
+      padding-bottom: 50px;
+      opacity: 0; }
+      body .scroller-section p:focus {
+        outline: none; }
+      body .scroller-section p a {
+        color: #DADAD9;
+        -webkit-transition: color 0.2s ease-out;
+        -moz-transition: color 0.2s ease-out;
+        -o-transition: color 0.2s ease-out;
+        transition: color 0.2s ease-out; }
+        body .scroller-section p a:hover {
+          color: #333232;
+          -webkit-transition: color 0.2s ease-out;
+          -moz-transition: color 0.2s ease-out;
+          -o-transition: color 0.2s ease-out;
+          transition: color 0.2s ease-out; }
+  @media screen and (max-width: 767px) {
+    body .scroller-section p:not(.copyright) {
+      margin: 0;
+      font-size: 22px;
+      padding-left: 158px;
+      width: 55%; }
+    body .name-header {
+      background: inherit; }
+    body #side-menu ul li {
+      font-size: 16px; } }
+  @media screen and (min-width: 768px) {
+    body #expandable a.name-header {
+      background: transparent !important; }
+      body #expandable a.name-header:hover {
+        background-color: #416165 !important;
+        -webkit-transition: background-color 0.2s ease-out;
+        -moz-transition: background-color 0.2s ease-out;
+        -o-transition: background-color 0.2s ease-out;
+        transition: background-color 0.2s ease-out; }
+    body body i:hover {
+      color: #909590;
+      -webkit-transition: color 0.2s ease-out;
+      -moz-transition: color 0.2s ease-out;
+      -o-transition: color 0.2s ease-out;
+      transition: color 0.2s ease-out; } }
+
+/*# sourceMappingURL=style.css.map */
