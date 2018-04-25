@@ -85,18 +85,29 @@ function opaqueNameHeader() {
 	}
 }
 
+function fadeInText() {
+	var scrollTop = $(this).scrollTop();
+
+	$(".scroller-section").each(function(i, scroller) {
+		if (Math.max(0, $(scroller).offset().top - scrollTop) == 0 && $(scroller).find('p').css("opacity") == 0) {
+			$(scroller).find('p').fadeTo(500,1);
+		}
+	});
+}
 
 $(function() {
 	nameSize();
 	menuPosition();
 	activateMenuItems();
 	opaqueNameHeader();
+	fadeInText();
 
 	$(window).scroll(function() {
 		nameSize();
 		menuPosition();
 		activateMenuItems();
 		opaqueNameHeader();
+		fadeInText();
 	});
 
 	$('.smooth-scroll').click(function() {

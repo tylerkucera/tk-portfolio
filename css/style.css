@@ -156,6 +156,7 @@ body .scroller-section p {
   width: 60%;
   font-size: 30px;
   padding-bottom: 50px;
+  opacity: 0;
 }
 body .scroller-section p:focus {
   outline: none;
